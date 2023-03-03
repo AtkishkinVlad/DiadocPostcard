@@ -12,7 +12,7 @@
 
 * {
   font-size: 24px;
-  font-family: "Lab Grotesque";
+  font-family: "Lab Grotesque", "Segoe UI", -apple-system, "Ubuntu Mono", sans-serif;
   color: var(--main-color);
 }
 
