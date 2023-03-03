@@ -83,6 +83,7 @@ body {
   justify-content: center;
   transition: transform 0.2s ease-in-out;
   will-change: transform;
+  font-weight: 600;
 }
 
 .description__suggestion:hover {
