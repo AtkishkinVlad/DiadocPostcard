@@ -114,7 +114,7 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: #d439d2;
+  background: linear-gradient(#db95da, #d439d2);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(50px);
@@ -130,7 +130,7 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: #366af3;
+  background: linear-gradient(#366af3, #2fccf4);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(50px);
@@ -146,7 +146,7 @@ body {
     min-width: 139.94px;
     min-height: 145.77px;
     z-index: -1;
-    background: #64B419;
+    background: linear-gradient(#64B419, var(--diadoc-color));
     animation: light-pulse 1.25s ease-out infinite both alternate;
     border-radius: 50%;
     filter: blur(50px);
