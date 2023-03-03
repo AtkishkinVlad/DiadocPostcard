@@ -1,0 +1,237 @@
+@import "font.css";
+
+:root {
+  --diadoc-color: #00ccae;
+  --background-color: #000;
+  --main-color: #fff;
+  --mobile-width: 400px;
+  --table-width: 600px;
+  --notebook-width: 800px;
+  --desktop-width: 1000px;
+}
+
+* {
+  font-size: 24px;
+  font-family: "Lab Grotesque";
+  color: var(--main-color);
+}
+
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+.postcard__container {
+  margin: 0 auto;
+  width: var(--mobile-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: welcome-animation 2s forwards;
+}
+
+.postcard__image {
+  width: var(--mobile-width);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.postcard__description {
+  margin-bottom: 8rem;
+}
+
+.description__title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.description__congratulation {
+  font-weight: 400;
+}
+
+.postcard__footer {
+  position: fixed;
+  bottom: 0;
+  width: 600px;
+  background-color: var(--diadoc-color);
+  border-radius: 1rem;
+  max-width: var(--mobile-width);
+  animation: footer-animation 2s forwards;
+  border: 0.25rem solid var(--main-color);
+}
+
+.footer__description {
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.description__suggestions_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-flow: row dense;
+  gap: 1rem;
+}
+
+.description__suggestion {
+  background-color: var(--diadoc-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  will-change: transform;
+}
+
+.description__suggestion:hover {
+  transform: scale(1.1);
+  box-shadow: var(--main-color) 0px 1px 4px, var(--main-color) 0px 0px 0px 3px;
+}
+
+.kontur__identika {
+  display: none;
+  position: absolute;
+  left: -25%;
+  top: -25%;
+}
+
+.light1 {
+  display: none;
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  height: 10vw;
+  width: 10vw;
+  min-width: 139.94px;
+  min-height: 145.77px;
+  z-index: -1;
+  background: var(--diadoc-color);
+  animation: light-pulse 1.25s ease-out infinite both alternate;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.light2 {
+  display: none;
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+  height: 10vw;
+  width: 10vw;
+  min-width: 139.94px;
+  min-height: 145.77px;
+  z-index: -1;
+  background: #d439d2;
+  animation: light-pulse 1.25s ease-out infinite both alternate;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.light3 {
+  display: none;
+  position: absolute;
+  bottom: 6%;
+  right: 4%;
+  height: 10vw;
+  width: 10vw;
+  min-width: 139.94px;
+  min-height: 145.77px;
+  z-index: -1;
+  background: #366af3;
+  animation: light-pulse 1.25s ease-out infinite both alternate;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.description__suggestions_title {
+  font-size: 1.5rem;
+}
+
+@keyframes light-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes welcome-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes footer-animation {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
+
+@media print {
+  .postcard__button_pdf {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .postcard__container,
+  .postcard__image {
+    width: var(--table-width);
+  }
+
+  .description__suggestions_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .postcard__container,
+  .postcard__image {
+    width: var(--notebook-width);
+  }
+
+  .description__suggestions_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .postcard__container,
+  .postcard__image {
+    width: var(--desktop-width);
+  }
+
+  .kontur__identika,
+  .light1,
+  .light2,
+  .light3 {
+    display: block;
+  }
+
+  .description__suggestions_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .kontur__identika {
+    left: -10%;
+    top: -10%;
+  }
+}
