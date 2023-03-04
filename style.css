@@ -98,7 +98,7 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: var(--diadoc-color);
+  background: conic-gradient(#69f2c2c9, var(--diadoc-color));
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(16px);
@@ -114,7 +114,7 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#db95da, #d439d2);
+  background: conic-gradient(#db95da, #f87bf6);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(24px);
@@ -147,7 +147,7 @@ body {
     min-width: 139.94px;
     min-height: 145.77px;
     z-index: -1;
-    background: conic-gradient(#64B419, var(--diadoc-color));
+    background: conic-gradient(#fef99ae0, #fba97c);
     animation: light-pulse 1.25s ease-out infinite both alternate;
     border-radius: 50%;
     filter: blur(36px);
