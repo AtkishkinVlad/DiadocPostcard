@@ -101,7 +101,7 @@ body {
   background: var(--diadoc-color);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(16px);
 }
 
 .light2 {
@@ -114,10 +114,10 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: linear-gradient(#db95da, #d439d2);
+  background: conic-gradient(#db95da, #d439d2);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(24px);
 }
 
 .light3 {
@@ -130,10 +130,10 @@ body {
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: linear-gradient(#366af3, #2fccf4);
+  background: conic-gradient(#366af3, #2fccf4);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(36px);
 }
 
 .light4 {
@@ -147,10 +147,10 @@ body {
     min-width: 139.94px;
     min-height: 145.77px;
     z-index: -1;
-    background: linear-gradient(#64B419, var(--diadoc-color));
+    background: conic-gradient(#64B419, var(--diadoc-color));
     animation: light-pulse 1.25s ease-out infinite both alternate;
     border-radius: 50%;
-    filter: blur(50px);
+    filter: blur(36px);
   }
 
 .description__suggestions_title {
@@ -159,12 +159,12 @@ body {
 
 @keyframes light-pulse {
   0% {
-    transform: scale(0.9);
-    opacity: 0.6;
+    transform: scale(0.8);
+    opacity: 0.5;
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1.1);
     opacity: 1;
   }
 }
